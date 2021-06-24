@@ -43,7 +43,7 @@ function startGame() {
     deck.shuffle();
 
     const deckMidPoint = Math.ceil(deck.numberOfCards / 2);
-    playerDeck = new Deck(deck.cards.slice(0, 1));
+    playerDeck = new Deck(deck.cards.slice(0, deckMidPoint));
     computerDeck = new Deck(deck.cards.slice(deckMidPoint, deck.numberOfCards));
     console.log(playerDeck);
     console.log(computerDeck);
